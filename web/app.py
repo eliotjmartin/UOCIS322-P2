@@ -15,7 +15,7 @@ def hello():
     return "UOCIS docker demo!\n"
 
 
-@app.route("/<name>")
+@app.route("/<path:name>")
 def redirect(name):
     """
     handle situations where user is not just looking for
