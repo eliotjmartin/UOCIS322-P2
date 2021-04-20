@@ -37,7 +37,7 @@ def forbidden(e):
     """
     Handle 403 error message
     """
-    return render_template("403.html")
+    return render_template("403.html"), 403
 
 
 @app.errorhandler(404)
@@ -45,7 +45,7 @@ def not_found(e):
     """
     Handle 404 error message
     """
-    return render_template("404.html")
+    return render_template("404.html"), 404
 
 
 if __name__ == "__main__":
